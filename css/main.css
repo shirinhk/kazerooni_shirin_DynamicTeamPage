@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@keyframes slideIn {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);}
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+
+body
+{
+  background-color: #012f85;
+}
+
+h2
+{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 2.2em;
+    color: #ffffff;
+}
+
+h2::first-letter
+{
+  font-size: 3.5em;
+  color:#f34813;
+}
+
+p
+{
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+/* Class */
+
+.hidden
+{
+  display: none;
+}
+
+.text
+{
+ width:  500px;
+ margin-top: 50px;
+ line-height: 2em;
+}
+
+.button
+{
+  padding: 20px 40px 20px 40px;
+  background-color: #f34813;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 1.1em;
+  letter-spacing: .5em;
+  position:absolute;
+  left:850px;
+  top:850px;
+  z-index:10;
+}
+
+.button:hover
+{
+  color:#ffffff;
+}
+
+
+.firstFlex
+{
+  position: absolute;
+  z-index: 2;
+  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+
+}
+
+.firstText
+{
+  margin-left: 150px;
+  margin-top: 150px;
+}
+
+.row
+{
+  display:flex;
+  flex-direction: row;
+}
+
+.readBtn
+{
+  padding-top: 40px;
+}
+
+.color
+{
+  color:#f34813;
+}
+
+
+/* ID */
+
+#container
+{
+  margin: 0 auto;
+}
+
+#flexSec
+{
+  display: flex;
+  flex-direction: row;
+}
