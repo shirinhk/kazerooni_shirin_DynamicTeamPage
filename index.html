@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>BIO PAGE for Authoring Class</title>
+  </head>
+
+  <body>
+    <h1 class="hidden">BIO PAGE</h1>
+
+    <main id="container">
+
+      <section id="flexSec">
+        <h2 class="hidden">Main Container</h2>
+            <section class="firstFlex">
+              <div class="row">
+                <h2 class="hidden">Home Page Section</h2>
+                <div><img src="images/firstImage.jpg" alt="Water Picture"></div>
+                <div class="firstText">
+                  <h2>Drop <br>Website Design & <br>Development Services</h2>
+                  <div class="text">
+                    <p>Looking for the best website design and development services that combines functionality, latest SEO techniques & design to grow your company’s business online? Welcome to the right place! </p>
+                    <p class="color">An excellent website design is the foundation of your online presentation. A good first impression with an excellent user experience means gaining your customer's trust easier.
+                      I can help you build your perfect website.</p>
+                    <p class="readBtn">To read more about me Please hit the button below:</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section><button type="button" name="button" class="button"> Click Here </button></section>
+
+            <section class="firstFlex">
+              <div class="row">
+                <h2 class="hidden">Bio Section</h2>
+                <div><img src="images/secondImage.jpg" alt="Flower Picture"></div>
+                <div class="firstText">
+                  <h2>Shirin Kazerooni</h2>
+                  <div class="text">
+                    <p class="color">My background field of study is Graphic Design and Fine Arts! I am envolve with Graphic Design for years and so intrested to make new creations, I understand that design is the mian part of every website and every customer's experience with your services.</p>
+                    <p>Beside, a good design needs good development that I am very good at it, I've learned web development in Fanshawe college with the best Proffessors in a practical and hands on program.
+                      I am also eagre to follow up with my customers and help them in their long journey to update their websites when ever they think it is needed.</p>
+                      <p class="readBtn color">Hit the below button to go back to Home Page:</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </section>
+
+    </main>
+
+    <script>
+      let sections = document.querySelectorAll('.firstFlex');
+      let btn = document.querySelector('.button');
+      sections[1].classList.add('hidden');
+
+
+      function showHide() {
+      //if the second section is hidden...
+      if(sections[1].classList.contains('hidden')) {
+        //...then hide the first section, and show the second one
+      sections[0].classList.add('hidden');
+      sections[1].classList.remove('hidden');
+      } else if(sections[0].classList.contains('hidden')) {
+      sections[1].classList.add('hidden');
+      sections[0].classList.remove('hidden');
+    }
+    }
+
+    btn.addEventListener("click",showHide,false);
+  </script>
+
+  </body>
+  </html>
